@@ -1,0 +1,13 @@
+Source: epics-extensions
+Section: unknown
+Priority: extra
+Maintainer: Michael Davidsaver <mdavidsaver@bnl.gov>
+Build-Depends: debhelper (>= 7), autotools-dev
+Standards-Version: 3.7.3
+Homepage: http://www.aps.anl.gov/epics/
+
+Package: epics-extensions-dev
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Build infrastructure for EPICS extentions
+ Common makefiles for building EPICS extentions.

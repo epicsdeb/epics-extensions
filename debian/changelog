@@ -1,0 +1,6 @@
+epics-extensions (20070703-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Mon, 22 Jun 2009 11:48:19 -0400
+
