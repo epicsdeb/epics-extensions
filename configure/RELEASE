@@ -5,8 +5,8 @@
 #INSTALL_LOCATION_EXTENSIONS=<fullpathname>
 
 # Location of external products
-EPICS_BASE=$(TOP)/../base
+EPICS_BASE=/usr/epics/base
 #EPICS_EXTENSIONS = /usr/local/epics/extensions
 EPICS_EXTENSIONS=$(TOP)
 
-OAG_APPS=$(TOP)/../../oag/apps
+OAG_APPS=/usr/epics/oag/apps
