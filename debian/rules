@@ -39,8 +39,8 @@ clean:
 	rm -f build-stamp 
 
 	# Add here commands to clean up after the build process.
-	[ ! -f Makefile ] || $(MAKE) distclean
-	rm -f config.sub config.guess
+	#[ ! -f Makefile ] || $(MAKE) distclean
+	#rm -f config.sub config.guess
 
 	dh_clean 
 
@@ -51,7 +51,10 @@ install: build
 	dh_installdirs
 
 	# Add here commands to install the package into debian/epics-extensions.
-	$(MAKE) prefix=$(CURDIR)/debian/epics-extensions/usr install
+	#$(MAKE) prefix=$(CURDIR)/debian/epics-extensions/usr install
+
+	install -d $(CURDIR)/debian/epics-extensions-dev/usr/epics/extensions
+	cp -r Makefile configure src $(CURDIR)/debian/epics-extensions-dev/usr/epics/extensions/
 
 
 # Build architecture-independent files here.
