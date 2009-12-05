@@ -1,3 +1,9 @@
+epics-extensions (20091204) unstable; urgency=low
+
+  * Regenerate using makeBaseExt from EPICS Base 3.14.10
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Fri, 04 Dec 2009 12:48:18 -0500
+
 epics-extensions (20070703-1) unstable; urgency=low
 
   * Initial release
