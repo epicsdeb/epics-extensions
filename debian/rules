@@ -54,7 +54,7 @@ install: build
 	#$(MAKE) prefix=$(CURDIR)/debian/epics-extensions/usr install
 
 	install -d $(CURDIR)/debian/epics-extensions-dev/usr/epics/extensions
-	cp -r Makefile configure src $(CURDIR)/debian/epics-extensions-dev/usr/epics/extensions/
+	cp -r configure $(CURDIR)/debian/epics-extensions-dev/usr/epics/extensions/
 
 
 # Build architecture-independent files here.
