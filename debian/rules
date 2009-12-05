@@ -9,38 +9,11 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-
-# These are used for cross-compiling and for saving the configure script
-# from having to guess our platform (since we know it already)
-DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
-DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
-ifneq ($(DEB_HOST_GNU_TYPE),$(DEB_BUILD_GNU_TYPE))
-CROSS= --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
-else
-CROSS= --build $(DEB_BUILD_GNU_TYPE)
-endif
-
-
-
-build: build-stamp
-
-build-stamp:
-	dh_testdir
-
-	# Add here commands to compile the package.
-	#$(MAKE)
-	#docbook-to-man debian/epics-extensions.sgml > epics-extensions.1
-
-	touch $@
+build:
 
 clean: 
 	dh_testdir
 	dh_testroot
-	rm -f build-stamp 
-
-	# Add here commands to clean up after the build process.
-	#[ ! -f Makefile ] || $(MAKE) distclean
-	#rm -f config.sub config.guess
 
 	dh_clean 
 
@@ -50,44 +23,25 @@ install: build
 	dh_clean -k 
 	dh_installdirs
 
-	# Add here commands to install the package into debian/epics-extensions.
-	#$(MAKE) prefix=$(CURDIR)/debian/epics-extensions/usr install
-
 	install -d $(CURDIR)/debian/epics-extensions-dev/usr/epics/extensions
 	cp -r configure $(CURDIR)/debian/epics-extensions-dev/usr/epics/extensions/
 
 
-# Build architecture-independent files here.
-binary-indep: build install
+# Build architecture-dependent files here.
+binary-arch:
 # We have nothing to do by default.
 
-# Build architecture-dependent files here.
-binary-arch: build install
+# Build architecture-independent files here.
+binary-indep: build install
 	dh_testdir
 	dh_testroot
 	dh_installchangelogs 
 	dh_installdocs
-	dh_installexamples
-#	dh_install
-#	dh_installmenu
-#	dh_installdebconf	
-#	dh_installlogrotate
-#	dh_installemacsen
-#	dh_installpam
-#	dh_installmime
-#	dh_python
-#	dh_installinit
-#	dh_installcron
-#	dh_installinfo
-	dh_installman
 	dh_link
-	dh_strip
 	dh_compress
 	dh_fixperms
-#	dh_perl
-#	dh_makeshlibs
 	dh_installdeb
-	dh_shlibdeps
+	dh_lintian
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb

@@ -1,0 +1,3 @@
+epics-extensions-dev: non-standard-dir-in-usr
+epics-extensions-dev: file-in-unusual-dir
+# EPICS installed to usr/epics
