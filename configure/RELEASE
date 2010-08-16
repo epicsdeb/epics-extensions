@@ -17,7 +17,7 @@
 # Define INSTALL_LOCATION in CONFIG_SITE
 
 # Location of external products
-EPICS_BASE=/usr/epics/base
-TEMPLATE_TOP=/usr/epics/base/templates/makeBaseExt/top
+EPICS_BASE=/usr/lib/epics
+TEMPLATE_TOP=/usr/lib/epics/templates/makeBaseExt/top
 EPICS_EXTENSIONS = $(EPICS_BASE)/../extensions
 

@@ -1,8 +1,9 @@
 epics-extensions for Debian
 ---------------------------
 
-This package installs /usr/epics/extensions/configure with some library locations
-set to the correct values for this system.  It is intended to be symlinked
-into the build directory when compiling an extension.
+This package installs /usr/lib/epics/extensions/configure with some 
+library locations set to the correct values for this system.  It is
+intended to be symlinked into the build directory when compiling an 
+extension.
 
  -- Michael Davidsaver <mdavidsaver@bnl.gov>  Mon, 22 Jun 2009 11:48:19 -0400
