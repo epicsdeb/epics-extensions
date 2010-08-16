@@ -1,3 +1,9 @@
+epics-extensions (20091204.1) unstable; urgency=low
+
+  * Install in /usr/lib/epics
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Mon, 16 Aug 2010 16:21:23 -0400
+
 epics-extensions (20091204) unstable; urgency=low
 
   * Regenerate using makeBaseExt from EPICS Base 3.14.10
