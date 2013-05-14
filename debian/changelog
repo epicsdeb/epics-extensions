@@ -2,6 +2,8 @@ epics-extensions (20130514-1) unstable; urgency=low
 
   * Regenerate using makeBaseExt from EPICS Base 3.14.12.3
   * Add defs for new multiarch library locations
+  * debian/control: Bump standards to 3.9.4 with no updates,
+    add Ralph Lange to Uploaders, update epics-dev dependency
 
  -- Ralph Lange <Ralph.Lange@gmx.de>  Tue, 14 May 2013 22:49:08 +0200
 
