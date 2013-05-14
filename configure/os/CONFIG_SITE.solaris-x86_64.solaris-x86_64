@@ -9,4 +9,8 @@
 #       leave the line empty.
 #
 
+-include $(TOP)/configure/os/CONFIG_SITE.solaris-x86.solaris-x86
+
+XRTGRAPH=
+SCIPLOT=YES
 

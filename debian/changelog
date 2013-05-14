@@ -1,3 +1,9 @@
+epics-extensions (20130514-1) unstable; urgency=low
+
+  * Regenerate using makeBaseExt from EPICS Base 3.14.12.3
+
+ -- Ralph Lange <Ralph.Lange@gmx.de>  Tue, 14 May 2013 22:49:08 +0200
+
 epics-extensions (20091204.1) unstable; urgency=low
 
   * Install in /usr/lib/epics
@@ -15,4 +21,3 @@ epics-extensions (20070703-1) unstable; urgency=low
   * Initial release
 
  -- Michael Davidsaver <mdavidsaver@bnl.gov>  Mon, 22 Jun 2009 11:48:19 -0400
-
