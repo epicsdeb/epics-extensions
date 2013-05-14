@@ -5,21 +5,25 @@ It was downloaded from http://www.aps.anl.gov/epics/
 
 Upstream Authors:
 
-    Copyright (c) 1991-2007 UChicago Argonne LLC and The Regents of the
-    University of California. All rights reserved.
+    Copyright (c) 1991-2011 UChicago Argonne LLC.
+    Copyright (c) 1991-2006 The Regents of the University of California.
+    Copyright (c) 2006-2011. Los Alamos National Security, LLC.
 
 Copyright:
 
-    Copyright (c) 1991-2007 UChicago Argonne LLC and The Regents of the
-    University of California. All rights reserved.
+    Copyright (c) 1991-2011 UChicago Argonne LLC.
+    Copyright (c) 1991-2006 The Regents of the University of California.
+    Copyright (c) 2006-2011. Los Alamos National Security, LLC. Some of this
+    material was produced under U.S. Government contract DE-AC52-06NA25396
+    for Los Alamos National Laboratory (LANL), which is operated by Los Alamos
+    National Security, LLC for the U.S. Department of Energy.
 
     EPICS Extensions is distributed subject to the following license conditions:
 
      SOFTWARE LICENSE AGREEMENT
      Software: EPICS Extensions
-     Versions: 3.13.7 and higher
 
-     1. The "Software", below, refers to EPICS BASE (in either source code, or
+     1. The "Software", below, refers to EPICS Extensions (in either source code, or
         binary form and accompanying documentation). Each licensee is
         addressed as "you" or "Licensee."
 
@@ -95,11 +99,22 @@ Copyright:
     ________________________________________________________________________
 
 
-
 License:
 
+    Copyright (c) The Regents of the University of California.
+    All rights reserved.
+
     Redistribution and use in source and binary forms, with or without
-    modification, are permitted under the terms of the BSD License.
+    modification, are permitted provided that the following conditions
+    are met:
+    1. Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+    2. Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in the
+       documentation and/or other materials provided with the distribution.
+    3. Neither the name of the University nor the names of its contributors
+       may be used to endorse or promote products derived from this software
+       without specific prior written permission.
 
     THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
     ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
@@ -112,9 +127,6 @@ License:
     LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
     OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
     SUCH DAMAGE.
-
-On Debian systems, the complete text of the BSD License can be
-found in `/usr/share/common-licenses/BSD'.
 
 
 The Debian packaging is (C) 2009, Michael Davidsaver <mdavidsaver@bnl.gov> and

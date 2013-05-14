@@ -9,7 +9,10 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-build:
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
+build-stamp:
 
 clean: 
 	dh_testdir
@@ -20,7 +23,7 @@ clean:
 install: build
 	dh_testdir
 	dh_testroot
-	dh_clean -k 
+	dh_prep
 	dh_installdirs
 
 	cp -r configure $(CURDIR)/debian/epics-extensions-dev/usr/lib/epics/extensions/
@@ -46,4 +49,4 @@ binary-indep: build install
 	dh_builddeb
 
 binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install 
+.PHONY: build build-arch build-indep clean binary-indep binary-arch binary install 
