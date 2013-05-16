@@ -16,8 +16,6 @@
 #MOTIF_LIB=/usr/X11R6/lib
 #MOTIF_INC=/usr/X11R6/include
 
-DEB_MARCH := $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-
 X11_LIB := $(dir $(wildcard /usr/lib/libX11.so))
 ifeq ($(X11_LIB),)
 X11_LIB := /usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)/

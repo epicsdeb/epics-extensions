@@ -1,3 +1,9 @@
+epics-extensions (20130514.2) unstable; urgency=low
+
+  * avoid spurious warning with debian 6.0
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Thu, 16 May 2013 12:10:38 -0400
+
 epics-extensions (20130514.1) unstable; urgency=low
 
   * Regenerate using makeBaseExt from EPICS Base 3.14.12.3
