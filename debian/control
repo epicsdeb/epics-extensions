@@ -10,5 +10,5 @@ Homepage: http://www.aps.anl.gov/epics/
 Package: epics-extensions-dev
 Architecture: all
 Depends: epics-dev (>= 3.14.12.3-1), ${misc:Depends}
-Description: Build infrastructure for EPICS extentions
- Common makefiles for building EPICS extentions.
+Description: Build infrastructure for EPICS extensions
+ Common makefiles for building EPICS extensions.
