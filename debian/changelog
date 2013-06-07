@@ -1,3 +1,10 @@
+epics-extensions (20130514.3) unstable; urgency=low
+
+  * debian/control: fix typos
+  * CONFIG_SITE: Do not set SHARED_LIBRARIES = NO
+
+ -- Ralph Lange <Ralph.Lange@gmx.de>  Fri, 07 Jun 2013 09:15:20 +0200
+
 epics-extensions (20130514.2) unstable; urgency=low
 
   * avoid spurious warning with debian 6.0
