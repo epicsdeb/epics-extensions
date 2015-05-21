@@ -1,3 +1,9 @@
+epics-extensions (20130514.4) unstable; urgency=low
+
+  * Rebuild for deb 8
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Thu, 21 May 2015 11:32:18 -0400
+
 epics-extensions (20130514.3) unstable; urgency=low
 
   * debian/control: fix typos
