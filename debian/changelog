@@ -1,3 +1,9 @@
+epics-extensions (20130514.5) unstable; urgency=medium
+
+  * '::' vs. ':' conflict w/ Base 3.15 in RULES_PYTHON
+
+ -- Michael Davidsaver <mdavidsaver@gmail.com>  Thu, 10 Mar 2016 19:39:58 -0500
+
 epics-extensions (20130514.4) unstable; urgency=low
 
   * Rebuild for deb 8
